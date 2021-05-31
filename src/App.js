@@ -1,24 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import "antd/dist/antd.css";
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+//Configuracion de rutas
+import routes from './config/routes';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        {routes.map((route,index)=>(
+          <RouteWithSubRoutes key={index}{...route}/>
+        ))}
+      </Switch>
+    </Router>
+  );
+}
+
+
+//Renderiza ruta padre y pasa rutas hijas al componente
+function RouteWithSubRoutes(route){  
+  return (
+    <Route
+      path = {route.path}
+      exact = {route.exact}
+      render = {props=><route.component routes={route.routes} {...props}/>}/*Se usa render porque va a renderizar otras rutas*/ 
+    />  
   );
 }
 
