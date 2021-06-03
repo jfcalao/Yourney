@@ -1,12 +1,12 @@
 //Layouts
-import LayoutUsers from '../layouts/LayoutUser';
+import Home from '../layouts/home';
 
 
 
 const routes = [
     {
         path: "/",
-        component: LayoutUsers,
+        component: Home,
         exact: true
     }
 ]
