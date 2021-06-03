@@ -4,8 +4,11 @@ import {
   MailOutlined,
   AppstoreOutlined,
   SettingOutlined,
+  LoginOutlined,
+  EditOutlined 
 } from "@ant-design/icons";
 import { useState } from "react";
+import {Link} from 'react-router-dom';
 
 /* const {SubMenu} = Menu */
 const Navigation = () => {
@@ -20,9 +23,12 @@ const Navigation = () => {
 
   const { current } = state;
   return (
-    <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
+    <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal" className="menu-bar">
       <Menu.Item key="where" icon={<MailOutlined />}>
-        ¿Dónde ir?
+        <a href="#hacer">
+         ¿Dónde ir?
+        </a>
+       
       </Menu.Item>
       <Menu.Item key="what" icon={<AppstoreOutlined />}>
         ¿Qué hacer?
@@ -33,14 +39,14 @@ const Navigation = () => {
       <Menu.Item
         className="login-navbar"
         key="signun"
-        icon={<AppstoreOutlined />}
+        icon={<EditOutlined />}
       >
         Registrarse
       </Menu.Item>
       <Menu.Item
         className="login-navbar"
         key="signin"
-        icon={<AppstoreOutlined />}
+        icon={<LoginOutlined />}
       >
         Ingresar
       </Menu.Item>

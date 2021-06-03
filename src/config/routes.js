@@ -1,5 +1,5 @@
 //Layouts
-import Home from '../layouts/home';
+import Home from '../pages/home';
 
 
 
