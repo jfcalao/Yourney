@@ -6,6 +6,7 @@ import {Layout} from 'antd'
 import './style.css'
 import Gallery from '../../components/gallery'
 import Section from '../../components/section'
+import Map from '../../components/map'
 const index = () => {
   const {Header, Content, Footer} = Layout
 
@@ -14,7 +15,7 @@ const index = () => {
       <div className="home-container">
         <Content>
           <Slider />
-{/*           <div className="home-info">
+          {/*           <div className="home-info">
             <h1>
               Yourney proporciona inteligencia, herramientas y recursos que
               ayudan a la industria del turismo en Barranquilla.
@@ -40,10 +41,17 @@ const index = () => {
             title="¿Qué hacer en Barranquilla?"
             text="Realice un recorrido por las numerosas vistas y experiencias de
         Barranquilla."
-            backgroundColor="red"
+            backgroundColor="#ce1212"
             color="white"
           />
           <Gallery />
+
+          <Section
+            title="Explora Barranquilla"
+            backgroundColor="#ce1212"
+            color="white"
+          />
+          <Map />
         </Content>
       </div>
     </Layout>
