@@ -3,6 +3,7 @@ import './style.css'
 
 import Gallery from '../../components/gallery'
 import {gallery} from '../../json/whatToDoGallery'
+import MenuTabs from '../../components/menuTabs'
 
 const WhatToDo = () => {
   return (
@@ -13,6 +14,7 @@ const WhatToDo = () => {
           <p>Conozca las experiencias imperdibles en Barranquilla.</p>
         </div>
       </div>
+      <MenuTabs/>
       <Gallery gallery={gallery} />
     </div>
   )
