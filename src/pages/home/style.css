@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 .ant-layout {
-  background: white;
+  background-color: #4b5d67 !important;
 }
 .home-container {
   height: 100vh;

@@ -38,3 +38,7 @@
   font-weight: bold;
   color: white;
 }
+
+.menu-tabs-container .active {
+  background-color: red;
+}

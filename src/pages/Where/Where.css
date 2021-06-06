@@ -1,17 +1,19 @@
-.contenido{
-    height: 100vh;
+.contenido {
+  height: 100vh;
 }
 
-.contenedor{
-    /* height: 100vh; */
-    text-align: center;
-    margin-left: 4rem;
-    margin-top: 2rem;
+.contenedor {
+  /* height: 100vh; */
+  text-align: center;
+  width: 80%;
+  background-color: white;
+  margin-left: 10%;
+  /* padding-left: 2.5%; */
 }
 
-.imagenes{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
+.imagenes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
 }
