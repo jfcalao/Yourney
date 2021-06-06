@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Map, GoogleApiWrapper, InfoWindow, Marker} from 'google-maps-react'
-
+import {map} from '../../json/map'
 const mapStyles = {
   width: '80%',
   height: '100%',
@@ -51,17 +51,22 @@ export class MapContainer extends Component {
           lng: -74.7889,
         }}
       >
-        <Marker
-          onClick={this.onMarkerClick}
-          name={'Punto'}
-          position={{
-            lat: 10.9878,
-            lng: -74.7889,
-          }}
-          icon={this.markerIcon(
-            'https://icons.iconarchive.com/icons/paomedia/small-n-flat/512/map-marker-icon.png',
-          )}
-        />
+        {map.map((site) => {
+          return (
+            <Marker
+              key={site.id}
+              onClick={this.onMarkerClick}
+              name={site.name}
+              position={{
+                lat: site.lat,
+                lng: site.long,
+              }}
+              icon={this.markerIcon(
+                'https://icons.iconarchive.com/icons/paomedia/small-n-flat/512/map-marker-icon.png',
+              )}
+            />
+          )
+        })}
         {/*         <Marker
           onClick={this.onMarkerClick}
           name={'Cliente'}
