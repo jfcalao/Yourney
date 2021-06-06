@@ -1,0 +1,17 @@
+.contenido{
+    height: 100vh;
+}
+
+.contenedor{
+    /* height: 100vh; */
+    text-align: center;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+.imagenes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
