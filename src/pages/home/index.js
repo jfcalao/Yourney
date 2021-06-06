@@ -10,9 +10,7 @@ const index = () => {
   return (
     <Layout>
       <div className="home-container">
-        <Header className="home-container-header">
-          <Navigation />
-        </Header>
+        
         <Content>
           <Slider />
           <div className="home-info section">
@@ -30,23 +28,44 @@ const index = () => {
           <section className="wrapper-hacer section" id="what">
             <div className="hacer">
               <div className=" images">
-                <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2021/02/13/thumbs_b_c_f11af34a341c6a1498b1cc1ec4773931.jpg?v=204640" />
+                <img
+                  src="https://cdnuploads.aa.com.tr/uploads/Contents/2021/02/13/thumbs_b_c_f11af34a341c6a1498b1cc1ec4773931.jpg?v=204640"
+                  alt=""
+                />
               </div>
 
               <div className=" images">
-                <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2021/02/13/thumbs_b_c_f11af34a341c6a1498b1cc1ec4773931.jpg?v=204640" />
+                <img
+                  src="https://cdnuploads.aa.com.tr/uploads/Contents/2021/02/13/thumbs_b_c_f11af34a341c6a1498b1cc1ec4773931.jpg?v=204640"
+                  alt=""
+                />
               </div>
 
               <div className=" images">
-                <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2021/02/13/thumbs_b_c_f11af34a341c6a1498b1cc1ec4773931.jpg?v=204640" />
+                <img
+                  src="https://cdnuploads.aa.com.tr/uploads/Contents/2021/02/13/thumbs_b_c_f11af34a341c6a1498b1cc1ec4773931.jpg?v=204640"
+                  alt=""
+                />
               </div>
 
               <div className=" images">
-                <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2021/02/13/thumbs_b_c_f11af34a341c6a1498b1cc1ec4773931.jpg?v=204640" />
+                <img
+                  src="https://cdnuploads.aa.com.tr/uploads/Contents/2021/02/13/thumbs_b_c_f11af34a341c6a1498b1cc1ec4773931.jpg?v=204640"
+                  alt=""
+                />
               </div>
 
               <div className=" images">
-                <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2021/02/13/thumbs_b_c_f11af34a341c6a1498b1cc1ec4773931.jpg?v=204640" />
+                <img
+                  src="https://cdnuploads.aa.com.tr/uploads/Contents/2021/02/13/thumbs_b_c_f11af34a341c6a1498b1cc1ec4773931.jpg?v=204640"
+                  alt=""
+                />
+              </div>
+              <div className=" images">
+                <img
+                  src="https://cdnuploads.aa.com.tr/uploads/Contents/2021/02/13/thumbs_b_c_f11af34a341c6a1498b1cc1ec4773931.jpg?v=204640"
+                  alt=""
+                />
               </div>
             </div>
           </section>

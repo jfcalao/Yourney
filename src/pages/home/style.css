@@ -10,11 +10,6 @@ html {
   margin-left: 10%;
 }
 
-.home-container-header {
-  width: 80vw;
-  padding: 0;
-}
-
 .home-info {
   display: flex;
   justify-content: center;

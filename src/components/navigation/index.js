@@ -5,10 +5,10 @@ import {
   AppstoreOutlined,
   SettingOutlined,
   LoginOutlined,
-  EditOutlined 
+  EditOutlined,
 } from "@ant-design/icons";
 import { useState } from "react";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 /* const {SubMenu} = Menu */
 const Navigation = () => {
@@ -23,32 +23,29 @@ const Navigation = () => {
 
   const { current } = state;
   return (
-    <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal" className="menu-bar">
+    <Menu
+      onClick={handleClick}
+      selectedKeys={[current]}
+      mode="horizontal"
+      className="menu-bar"
+    >
+      <Menu.Item key="home" icon={<MailOutlined />}>
+        <Link to="/">Inicio</Link>
+      </Menu.Item>
       <Menu.Item key="where" icon={<MailOutlined />}>
-        <a href="#hacer">
-         ¿Dónde ir?
-        </a>
-       
+        <Link to="/where">¿Dónde ir?</Link>
       </Menu.Item>
       <Menu.Item key="what" icon={<AppstoreOutlined />}>
-        ¿Qué hacer?
+        <Link to="/what">¿Qué hacer?</Link>
       </Menu.Item>
       <Menu.Item key="maps" icon={<AppstoreOutlined />}>
-        Mapas
+        <Link to="/maps">Mapas</Link>
       </Menu.Item>
-      <Menu.Item
-        className="login-navbar"
-        key="signun"
-        icon={<EditOutlined />}
-      >
-        Registrarse
+      <Menu.Item className="login-navbar" key="signun" icon={<EditOutlined />}>
+        <Link to="/signup">Registrarse</Link>
       </Menu.Item>
-      <Menu.Item
-        className="login-navbar"
-        key="signin"
-        icon={<LoginOutlined />}
-      >
-        Ingresar
+      <Menu.Item className="login-navbar" key="signin" icon={<LoginOutlined />}>
+        <Link to="/login">Ingresar</Link>
       </Menu.Item>
     </Menu>
   );
