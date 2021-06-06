@@ -1,0 +1,13 @@
+.container {
+  /*  margin: auto; */
+  /* padding: 0 1rem; */
+  /* max-width: 71.25rem; */
+  width: 100%;
+}
+
+.grid {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+}

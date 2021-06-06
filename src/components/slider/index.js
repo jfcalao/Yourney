@@ -12,7 +12,7 @@ const contentStyle = {
 
 const Slider = () => {
   return (
-    <Carousel className="section" autoplay>
+    <Carousel className="slider" autoplay>
       <div>
         <img
           style={contentStyle}
