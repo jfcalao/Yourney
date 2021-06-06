@@ -6,6 +6,8 @@ import {
   SettingOutlined,
   LoginOutlined,
   EditOutlined,
+  CompassOutlined,
+  HomeOutlined,
 } from "@ant-design/icons";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -29,17 +31,14 @@ const Navigation = () => {
       mode="horizontal"
       className="menu-bar"
     >
-      <Menu.Item key="home" icon={<MailOutlined />}>
+      <Menu.Item key="home" icon={<HomeOutlined />}>
         <Link to="/">Inicio</Link>
       </Menu.Item>
-      <Menu.Item key="where" icon={<MailOutlined />}>
+      <Menu.Item key="where" icon={<CompassOutlined />}>
         <Link to="/where">¿Dónde ir?</Link>
       </Menu.Item>
       <Menu.Item key="what" icon={<AppstoreOutlined />}>
         <Link to="/what">¿Qué hacer?</Link>
-      </Menu.Item>
-      <Menu.Item key="maps" icon={<AppstoreOutlined />}>
-        <Link to="/maps">Mapas</Link>
       </Menu.Item>
       <Menu.Item className="login-navbar" key="signun" icon={<EditOutlined />}>
         <Link to="/signup">Registrarse</Link>
