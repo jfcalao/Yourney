@@ -5,6 +5,7 @@ import {Layout} from 'antd'
 
 import './style.css'
 import Gallery from '../../components/gallery'
+import Section from '../../components/section'
 const index = () => {
   const {Header, Content, Footer} = Layout
 
@@ -13,7 +14,7 @@ const index = () => {
       <div className="home-container">
         <Content>
           <Slider />
-          <div className="home-info">
+{/*           <div className="home-info">
             <h1>
               Yourney proporciona inteligencia, herramientas y recursos que
               ayudan a la industria del turismo en Barranquilla.
@@ -24,7 +25,24 @@ const index = () => {
               ciudades de Colombia y un destino turístico de referencia para
               locales y extranjeros.
             </p>
-          </div>
+          </div> */}
+          <Section
+            title="Yourney proporciona inteligencia, herramientas y recursos que
+            ayudan a la industria del turismo en Barranquilla."
+            text="Barranquilla, también conocida como la ‘Arenosa’
+            o ‘Curramba la Bella’, es una de las principales
+            ciudades de Colombia y un destino turístico de referencia para
+            locales y extranjeros."
+            backgroundColor="white"
+            color="black"
+          />
+          <Section
+            title="¿Qué hacer en Barranquilla?"
+            text="Realice un recorrido por las numerosas vistas y experiencias de
+        Barranquilla."
+            backgroundColor="red"
+            color="white"
+          />
           <Gallery />
         </Content>
       </div>
