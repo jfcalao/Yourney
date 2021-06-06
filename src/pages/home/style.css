@@ -19,6 +19,7 @@ html {
   height: 15%;
   background-color: white;
   font-family: source sans pro, Helvetica, Arial, sans-serif;
+  margin-top: 50px;
 }
 
 .home-info h1 {
@@ -35,12 +36,6 @@ html {
 }
 
 /* .hacer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-} */
-.hacer {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -77,4 +72,4 @@ html {
 
 .section {
   padding: 40px 0;
-}
+} */
