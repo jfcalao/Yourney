@@ -51,6 +51,7 @@ const index = () => {
             backgroundColor="#ce1212"
             color="white"
           />
+
           <Map />
         </Content>
       </div>
