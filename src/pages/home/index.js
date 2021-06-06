@@ -4,9 +4,12 @@ import Slider from '../../components/slider'
 import {Layout} from 'antd'
 
 import './style.css'
+
 import Gallery from '../../components/gallery'
 import Section from '../../components/section'
 import Map from '../../components/map'
+
+import {gallery} from '../../json/homeGallery'
 const index = () => {
   const {Header, Content, Footer} = Layout
 
@@ -44,7 +47,7 @@ const index = () => {
             backgroundColor="#ce1212"
             color="white"
           />
-          <Gallery />
+          <Gallery gallery={gallery}/>
 
           <Section
             title="Explora Barranquilla"
