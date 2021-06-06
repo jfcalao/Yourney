@@ -1,0 +1,14 @@
+.cabecera{
+
+}
+
+.contenedor{
+    text-align: center;
+    margin-left: 4rem;
+}
+
+.imagenes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
