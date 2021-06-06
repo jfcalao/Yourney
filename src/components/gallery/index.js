@@ -3,9 +3,10 @@ import './style.css'
 
 import GalleryImage from '../galleryImage'
 
-import {gallery} from '../../json/gallery'
 
-const Gallery = () => {
+
+const Gallery = (props) => {
+  const {gallery} = props
   return (
     <div className="grid">
       {gallery.map((image) => {
