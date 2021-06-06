@@ -1,19 +1,18 @@
-
-import {Carousel} from 'antd'
+import { Carousel } from "antd";
 
 const contentStyle = {
-  height: '80vh',
-  width: '100%',
- /*  color: '#fff', */
+  height: "80vh",
+  width: "100%",
+  /*  color: '#fff', */
   /* lineHeight: '160px',
   textAlign: 'center',
   background: '#364d79', */
   /* objectFit: 'cover', */
-}
+};
 
 const Slider = () => {
   return (
-    <Carousel autoplay >
+    <Carousel className="section" autoplay>
       <div>
         <img
           style={contentStyle}
@@ -50,6 +49,6 @@ const Slider = () => {
         />
       </div>
     </Carousel>
-  )
-}
-export default Slider
+  );
+};
+export default Slider;
