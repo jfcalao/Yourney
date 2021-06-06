@@ -1,0 +1,12 @@
+.container {
+  /*  margin: auto; */
+  /* padding: 0 1rem; */
+  /* max-width: 71.25rem; */
+  width: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}

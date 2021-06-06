@@ -1,0 +1,40 @@
+.menu-tabs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+.menu-tabs-container div {
+  background-color: #222831;
+  cursor: pointer;
+  height: 100px;
+  width: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  transition: all ease 0.5s;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.menu-tabs-container div:hover {
+  background-color: #222831;
+  opacity: 0.9;
+}
+
+.menu-tabs-container div span {
+  margin-top: 5px;
+  font-weight: bold;
+  color: white;
+}
