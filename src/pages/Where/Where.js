@@ -38,7 +38,7 @@ export default function Where(){
                             </Card>
                         </Col>
 
-                        <Col span={8}>
+                        <Col /* span={8} */> {/* COMENTÉ ESA PARTE EN LAS ULTIMAS FOTOS PORQUE CREABA UN MARGIN TODO EXTRAÑO Y HACÍA QUE EL CONTENIDO NO SE CENTRARA CORRECTAMENTE */}
                             <Card
                                 hoverable
                                 style={{ width: 240 }}
@@ -69,7 +69,7 @@ export default function Where(){
                             </Card>
                         </Col>
 
-                        <Col span={8}>
+                        <Col /* span={8} */>
                             <Card
                                 hoverable
                                 style={{ width: 240 }}
