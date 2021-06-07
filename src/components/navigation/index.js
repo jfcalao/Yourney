@@ -1,29 +1,27 @@
-import "./style.css";
-import { Menu } from "antd";
+import './style.css'
+import {Menu} from 'antd'
 import {
-  MailOutlined,
   AppstoreOutlined,
-  SettingOutlined,
   LoginOutlined,
   EditOutlined,
   CompassOutlined,
   HomeOutlined,
-} from "@ant-design/icons";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+} from '@ant-design/icons'
+import {useState} from 'react'
+import {Link} from 'react-router-dom'
 
 /* const {SubMenu} = Menu */
 const Navigation = () => {
-  const [state, setState] = useState({
-    current: "where",
-  });
+  const [estado, setEstado] = useState({
+    current: 'where',
+  })
 
   const handleClick = (e) => {
-    console.log("click ", e);
-    setState({ current: e.key });
-  };
+    console.log('click ', e)
+    setEstado({current: e.key})
+  }
 
-  const { current } = state;
+  const {current} = estado
   return (
     <Menu
       onClick={handleClick}
@@ -47,7 +45,7 @@ const Navigation = () => {
         <Link to="/login">Ingresar</Link>
       </Menu.Item>
     </Menu>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation

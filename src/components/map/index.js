@@ -7,9 +7,9 @@ const mapStyles = {
 }
 
 export class MapContainer extends Component {
-  constructor(props) {
+  /* constructor(props) {
     super(props)
-  }
+  } */
 
   state = {
     showingInfoWindow: false, // Hides or shows the InfoWindow

@@ -1,5 +1,4 @@
 import React from 'react'
-import Navigation from '../../components/navigation'
 import Slider from '../../components/slider'
 import {Layout} from 'antd'
 
@@ -11,7 +10,7 @@ import Map from '../../components/map'
 
 import {gallery} from '../../json/homeGallery'
 const index = () => {
-  const {Header, Content, Footer} = Layout
+  const {Content} = Layout
 
   return (
     <Layout>
@@ -47,7 +46,7 @@ const index = () => {
             backgroundColor="#ce1212"
             color="white"
           />
-          <Gallery gallery={gallery}/>
+          <Gallery gallery={gallery} />
 
           <Section
             title="Explora Barranquilla"

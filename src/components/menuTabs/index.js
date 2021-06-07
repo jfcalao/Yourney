@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import './style.css'
 
 import Food from '../../icons/food'
@@ -27,19 +27,19 @@ const MenuTabs = () => {
         <Food width="32px" height="32px" fill="white" />
         <span>Comida</span>
       </div>
-      <div id="drink" onClick={() => changeColor('drink')} >
+      <div id="drink" onClick={() => changeColor('drink')}>
         <Drink width="32px" height="32px" fill="white" />
         <span>Bebidas</span>
       </div>
-      <div id="culture" onClick={() => changeColor('culture')} >
+      <div id="culture" onClick={() => changeColor('culture')}>
         <Culture width="32px" height="32px" fill="white" />
         <span>Cultura</span>
       </div>
-      <div id="city" onClick={() => changeColor('city')} >
+      <div id="city" onClick={() => changeColor('city')}>
         <City width="32px" height="32px" fill="white" />
         <span>Sitios</span>
       </div>
-      <div id="party" onClick={() => changeColor('party')} >
+      <div id="party" onClick={() => changeColor('party')}>
         <Party width="32px" height="32px" fill="white" />
         <span>Fiesta</span>
       </div>
