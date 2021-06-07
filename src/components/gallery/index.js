@@ -3,8 +3,6 @@ import './style.css'
 
 import GalleryImage from '../galleryImage'
 
-
-
 const Gallery = (props) => {
   const {gallery} = props
   return (
@@ -13,6 +11,7 @@ const Gallery = (props) => {
         return (
           <GalleryImage
             id={image.id}
+            key={image.id}
             text={image.text}
             title={image.title}
             url={image.url}
